@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MotoGP - Deportes de Motor</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,73 +31,400 @@
                         <a class="nav-link" href="#Leyendas">Leyendas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Motos">Motos</a>
+                        <a class="nav-link" href="#Monoplazas">Monoplazas</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <section class="container my-5" id="Acercade">
         <h2>MotoGP</h2>
     </section>
+
     <section class="container my-5" id="Circuitos">
+        <h2>Circuitos de MotoGP</h2>
         <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="circuito1.jpg" class="card-img-top" alt="Circuito 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Circuito 1</h5>
-                        <p class="card-text">Descripción del circuito 1.</p>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-12">
+                            <div class="card m-1">
+                                <img src="circuito1.jpg" class="card-img-top" alt="Circuito 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Circuito de Jerez (España)</h5>
+                                    <p class="card-text">El Circuito de Jerez, en España, es conocido por su ambiente festivo y es un lugar clásico en el calendario de MotoGP.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12">
+                            <div class="card m-1">
+                                <img src="circuito2.jpg" class="card-img-top" alt="Circuito 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Circuito de Mugello (Italia)</h5>
+                                    <p class="card-text">El Circuito de Mugello, en Italia, es famoso por su belleza y desafiantes curvas rápidas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12">
+                            <div class="card m-1">
+                                <img src="circuito3.jpg" class="card-img-top" alt="Circuito 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Circuito de Barcelona-Cataluña (España)</h5>
+                                    <p class="card-text">El Circuito de Barcelona-Cataluña es un lugar emblemático que presenta un desafío técnico para los pilotos de MotoGP.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12">
+                            <div class="card m-1">
+                                <img src="circuito4.jpg" class="card-img-top" alt="Circuito 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Circuito de Le Mans (Francia)</h5>
+                                    <p class="card-text">El Circuito de Le Mans, en Francia, es conocido por su clima impredecible, lo que lo convierte en un desafío para los pilotos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12">
+                            <div class="card m-1">
+                                <img src="circuito5.jpg" class="card-img-top" alt="Circuito 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Circuito de Assen (Países Bajos)</h5>
+                                    <p class="card-text">El Circuito de Assen es conocido como "La Catedral" y es el circuito más antiguo en el calendario de MotoGP.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12">
+                            <div class="card m-1">
+                                <img src="circuito6.jpg" class="card-img-top" alt="Circuito 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Circuito de Sachsenring (Alemania)</h5>
+                                    <p class="card-text">El Circuito de Sachsenring, en Alemania, es conocido por su pista corta y giros pronunciados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12">
+                            <div class="card m-1">
+                                <img src="circuito7.jpg" class="card-img-top" alt="Circuito 7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Circuito de Brno (República Checa)</h5>
+                                    <p class="card-text">El Circuito de Brno, en la República Checa, es famoso por sus cambios de elevación y desafíos técnicos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12">
+                            <div class="card m-1">
+                                <img src="circuito8.jpg" class="card-img-top" alt="Circuito 8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Circuito de Silverstone (Reino Unido)</h5>
+                                    <p class="card-text">El Circuito de Silverstone, en el Reino Unido, es conocido por su alta velocidad y condiciones variables.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12">
+                            <div class="card m-1">
+                                <img src="circuito9.jpg" class="card-img-top" alt="Circuito 9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Circuito de Misano (Italia)</h5>
+                                    <p class="card-text">El Circuito de Misano, en Italia, es conocido por su ambiente apasionado y entusiasta.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12">
+                            <div class="card m-1">
+                                <img src="circuito10.jpg" class="card-img-top" alt="Circuito 10">
+                                <div class="card-body">
+                                    <h5 class="card-title">Circuito de Valencia (España)</h5>
+                                    <p class="card-text">El Circuito de Valencia, en España, es conocido por ser el lugar donde se deciden muchos campeonatos de MotoGP.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" ariahidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </section>    
+    </section>
+
     <section class="container my-5" id="Pilotos">
-        <h3 class="mt-4">Pilotos Actuales</h3>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="piloto1.jpg" class="card-img-top" alt="Piloto 1">
+        <h2>Pilotos de MotoGP</h2>
+        <div class="row mt-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card m-1">
+                    <img src="marc_marquez.jpg" class="card-img-top" alt="Marc Márquez">
                     <div class="card-body">
-                        <h5 class="card-title">Piloto 1</h5>
-                        <p class="card-text">Descripción del piloto 1.</p>
+                        <h5 class="card-title">Marc Márquez</h5>
+                        <p class="card-text">Marc Márquez es uno de los pilotos más exitosos de la historia de MotoGP. Ha ganado múltiples campeonatos de MotoGP y es conocido por su estilo de conducción agresivo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card m-1">
+                    <img src="valentino_rossi.jpg" class="card-img-top" alt="Valentino Rossi">
+                    <div class="card-body">
+                        <h5 class="card-title">Valentino Rossi</h5>
+                        <p class="card-text">Valentino Rossi, apodado "The Doctor", es una leyenda de MotoGP. Ha ganado numerosos campeonatos a lo largo de su carrera y es ampliamente respetado en el deporte.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card m-1">
+                    <img src="fabio_quartararo.jpg" class="card-img-top" alt="Fabio Quartararo">
+                    <div class="card-body">
+                        <h5 class="card-title">Fabio Quartararo</h5>
+                        <p class="card-text">Fabio Quartararo es uno de los pilotos jóvenes más prometedores en MotoGP. Ha demostrado un gran potencial y competencia en las carreras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card m-1">
+                    <img src="andrea_dovizioso.jpg" class="card-img-top" alt="Andrea Dovizioso">
+                    <div class="card-body">
+                        <h5 class="card-title">Andrea Dovizioso</h5>
+                        <p class="card-text">Andrea Dovizioso es un piloto experimentado que ha estado compitiendo en MotoGP durante muchos años. Ha estado cerca de ganar el campeonato en varias ocasiones.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card m-1">
+                    <img src="joan_mir.jpg" class="card-img-top" alt="Joan Mir">
+                    <div class="card-body">
+                        <h5 class="card-title">Joan Mir</h5>
+                        <p class="card-text">Joan Mir es el actual campeón de MotoGP. Es conocido por su estilo de conducción suave y estratégico.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card m-1">
+                    <img src="jack_miller.jpg" class="card-img-top" alt="Jack Miller">
+                    <div class="card-body">
+                        <h5 class="card-title">Jack Miller</h5>
+                        <p class="card-text">Jack Miller es conocido por su valentía en la pista y su capacidad para luchar por las posiciones delanteras en las carreras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card m-1">
+                    <img src="maverick_vinales.jpg" class="card-img-top" alt="Maverick Viñales">
+                    <div class="card-body">
+                        <h5 class="card-title">Maverick Viñales</h5>
+                        <p class="card-text">Maverick Viñales es un piloto rápido y talentoso que ha competido en varios equipos en MotoGP.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card m-1">
+                    <img src="johann_zarco.jpg" class="card-img-top" alt="Johann Zarco">
+                    <div class="card-body">
+                        <h5 class="card-title">Johann Zarco</h5>
+                        <p class="card-text">Johann Zarco ha demostrado ser un contendiente fuerte en MotoGP y ha logrado podios en varias ocasiones.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card m-1">
+                    <img src="piloto10.jpg" class="card-img-top" alt="Piloto 10">
+                    <div class="card-body">
+                        <h5 class="card-title">Pol Espargaró</h5>
+                        <p class="card-text"> Pol ha demostrado ser un competidor fuerte en el campeonato es conocido por su agresivo estilo de conducción.</p>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="container my-5" id="Leyendas">
-        <h3 class="mt-4">Pilotos Legendarios</h3>
+        <h2>Leyendas de MotoGP</h2>
         <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="piloto-legendario1.jpg" class="card-img-top" alt="Piloto Legendario 1">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card m-1">
+                    <img src="valentino_rossi.jpg" class="card-img-top" alt="Valentino Rossi">
                     <div class="card-body">
-                        <h5 class="card-title">Piloto Legendario 1</h5>
-                        <p class="card-text">Descripción del piloto legendario 1.</p>
+                        <h5 class="card-title">Valentino Rossi</h5>
+                        <p class="card-text">7 veces campeón del mundo en la categoría máxima (500cc/MotoGP). Conocido como "The Doctor".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card m-1">
+                    <img src="giacomo_agostini.jpg" class="card-img-top" alt="Giacomo Agostini">
+                    <div class="card-body">
+                        <h5 class="card-title">Giacomo Agostini</h5>
+                        <p class="card-text">15 veces campeón del mundo en 350cc y 500cc. Apodado "Ago".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card m-1">
+                    <img src="mick_doohan.jpg" class="card-img-top" alt="Mick Doohan">
+                    <div class="card-body">
+                        <h5 class="card-title">Mick Doohan</h5>
+                        <p class="card-text">5 veces campeón del mundo en la categoría de 500cc. Dominó en la década de 1990.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card m-1">
+                    <img src="angel_nieto.jpg" class="card-img-top" alt="Ángel Nieto">
+                    <div class="card-body">
+                        <h5 class="card-title">Ángel Nieto</h5>
+                        <p class="card-text">13 veces campeón del mundo en varias categorías, incluyendo 50cc y 125cc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card m-1">
+                    <img src="eddie_lawson.jpg" class="card-img-top" alt="Eddie Lawson">
+                    <div class="card-body">
+                        <h5 class="card-title">Eddie Lawson</h5>
+                        <p class="card-text">4 veces campeón del mundo en 500cc. Conocido por su estilo suave en la pista.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card m-1">
+                    <img src="wayne_rainey.jpg" class="card-img-top" alt="Wayne Rainey">
+                    <div class="card-body">
+                        <h5 class="card-title">Wayne Rainey</h5>
+                        <p class="card-text">3 veces campeón del mundo en 500cc. Carismático y talentoso.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card m-1">
+                    <img src="casey_stoner.jpg" class="card-img-top" alt="Casey Stoner">
+                    <div class="card-body">
+                        <h5 class="card-title">Casey Stoner</h5>
+                        <p class="card-text">2 veces campeón del mundo en MotoGP. Estilo de conducción agresivo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card m-1">
+                    <img src="casey_stoner.jpg" class="card-img-top" alt="Casey Stoner">
+                    <div class="card-body">
+                        <h5 class="card-title">Márquez</h5>
+                        <p class="card-text">8 veces campeón del mundo en distintas categorías, incluyendo 125cc, Moto2 y MotoGP. Ha sido uno de los pilotos más dominantes en la última década.</p>
                     </div>
                 </div>
             </div>
         </div>
+        
     </section>
-    <section class="container my-5" id="Motos">
-        <h3 class="mt-4">Vehículos del WRC</h3>
+
+    <section class="container my-5" id="Monoplazas">
+        <h3>Motos de MotoGP</h3>
+        <p>Las motos utilizadas en MotoGP son máquinas de alto rendimiento diseñadas para la competición en pistas de carreras. Estas motos son construidas por diferentes fabricantes y son verdaderas maravillas de la ingeniería.</p>
         <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="vehiculo1.jpg" class="card-img-top" alt="Vehículo 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Vehículo 1</h5>
-                        <p class="card-text">Descripción del vehículo 1.</p>
+            <div id="carouselMotos" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card m-1">
+                            <img src="moto1.jpg" class="card-img-top" alt="Moto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Yamaha YZR-M1</h5>
+                                <p class="card-text">La Yamaha YZR-M1 es una moto icónica en MotoGP, utilizada por varios pilotos y equipos para competir en la categoría principal.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Potente motor de 4 tiempos.</li>
+                                <li class="list-group-item">Chasis de aluminio de alto rendimiento.</li>
+                            </ul>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card m-1" >
+                            <img src="moto2.jpg" class="card-img-top" alt="Moto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Ducati Desmosedici GP</h5>
+                                <p class="card-text">La Ducati Desmosedici GP es conocida por su distintivo motor en V y ha tenido un gran éxito en MotoGP en manos de pilotos talentosos.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Motor en V de alto rendimiento.</li>
+                                <li class="list-group-item">Tecnología avanzada de frenos y suspensión.</li>
+                            </ul>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card m-1" >
+                            <img src="moto3.jpg" class="card-img-top" alt="Moto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Honda RC213V</h5>
+                                <p class="card-text">La Honda RC213V es una moto campeona en MotoGP y ha sido pilotada por algunos de los mejores corredores de la historia.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Motor potente y eficiente.</li>
+                                <li class="list-group-item">Diseño aerodinámico de vanguardia.</li>
+                            </ul>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card m-1" >
+                            <img src="moto4.jpg" class="card-img-top" alt="Moto 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Suzuki GSX-RR</h5>
+                                <p class="card-text">La Suzuki GSX-RR es conocida por su manejo ágil y ha demostrado ser competitiva en las pistas de MotoGP.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Chasis ligero y manejable.</li>
+                                <li class="list-group-item">Motor de alto rendimiento.</li>
+                            </ul>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card m-1" >
+                            <img src="moto5.jpg" class="card-img-top" alt="Moto 5">
+                            <div class="card-body">
+                                <h5 class="card-title">KTM RC16</h5>
+                                <p class="card-text">La KTM RC16 es una moto relativamente nueva en MotoGP y ha estado en constante desarrollo para competir con los fabricantes establecidos.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Diseño innovador y en constante evolución.</li>
+                                <li class="list-group-item">Motor potente y ágil.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMotos" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMotos" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
         </div>
     </section>
-    <footer class="bg-warning text-dark text-center p-3">
-        <p>&copy; 2023 Deportes de Motor. Todos los derechos reservados.</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
+
