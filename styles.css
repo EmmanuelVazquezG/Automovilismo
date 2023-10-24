@@ -1,43 +1,86 @@
-body {
-    background: #1fc551;
-}
-
 .carousel-imagen {
     max-width: 99%;
-    height: 50rem;
+}
+
+body {
+    background: #F0F2F5; 
+    font-size: 16px; 
 }
 
 
+:root {
+    --primary-color: #EB4121; 
+    --secondary-color: #EB8721; 
+    --text-color: #333; 
+}
 
-@media (max-width: 359px) {
+
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+
+.introduccion {
+    font-size: 18px !important;
+    padding: 0 !important;
+    margin: auto !important;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+}
+
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    border-radius: 10px;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3, h4 {
+    color: #000000; 
+    text-shadow: 2px 2px 8px #EB4121, -2px -2px 8px #EB4121, 0 0 10px #EB4121; 
+}
+
+.navbar .nav-link:hover{
+    color: #000000; 
+    text-shadow: 2px 2px 8px #ffffff, -2px -2px 8px #ffffff, 0 0 10px #ffffff; 
+}
+
+#Circuitos .card {
+    background-color: var(--secondary-color);
+}
+
+#Pilotos .card {
+    background-color: var(--primary-color);
+}
+
+#Leyendas .card {
+    background-color: var(--secondary-color);
+}
+
+#Vehiculos .card {
+    background-color: var(--primary-color);
+}
+
+
+@media (max-width: 767px) {
     body {
         font-size: 14px;
-    }
-    .navbar {
-        background-color: #ff5733;
     }
     .introduccion {
         font-size: 14px !important;
-        padding: 0% !important;
-        margin-left: 20% !important;
+        padding: 0 !important;
+        margin-left: 5% !important;
         margin-right: 5% !important;
         margin-top: 5% !important;
         margin-bottom: 5% !important;
-    }
-}
-@media (min-width: 360px) and (max-width: 767px) {
-    body {
-        font-size: 14px;
-    }
-    .navbar {
-        background-color: #ffcc33;
-    }
-    .introduccion {
-        font-size: 18px !important;
-        padding: 0% !important;
-        margin: auto !important;
-        margin-top: 5% !important;
-        margin-bottom: 5% !important;
+        width: 95%;
     }
 }
 
@@ -45,13 +88,12 @@ body {
     body {
         font-size: 16px;
     }
-    .navbar {
-        background-color: #ffcc33;
+    .introduccion {
+        margin-left: 10% !important;
+        margin-right: 10% !important;
     }
 }
 
 @media (min-width: 1024px) {
-    .navbar {
-        background-color: #ff9933; 
-    }
+    
 }
