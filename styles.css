@@ -1,26 +1,25 @@
-
 .carousel-imagen {
     max-width: 99%;
 }
 
 body {
-    background: #F0F2F5; /* Cambiamos el fondo a un tono más suave */
-    font-size: 16px; /* Tamaño de fuente predeterminado */
+    background: #F0F2F5; 
+    font-size: 16px; 
 }
 
-/* Paleta de colores */
+
 :root {
-    --primary-color: #2E86DE; /* Azul primario */
-    --secondary-color: #F7DC6F; /* Amarillo secundario */
-    --text-color: #333; /* Texto principal */
+    --primary-color: #EB4121; 
+    --secondary-color: #EB8721; 
+    --text-color: #333; 
 }
 
-/* Navbar */
+
 .navbar {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
 }
 
-/* Sección de introducción */
+
 .introduccion {
     font-size: 18px !important;
     padding: 0 !important;
@@ -29,7 +28,7 @@ body {
     margin-bottom: 5% !important;
 }
 
-/* Cards */
+
 .card {
     background-color: #fff;
     border: 1px solid #ddd; 
@@ -44,8 +43,13 @@ body {
 }
 
 h2, h3, h4 {
-    color: #FFF; /* Color del texto en blanco */
-    text-shadow: 2px 2px 8px #2E86DE, -2px -2px 8px #2E86DE, 0 0 10px #2E86DE; /* Sombra de texto para crear el efecto neón */
+    color: #000000; 
+    text-shadow: 2px 2px 8px #EB4121, -2px -2px 8px #EB4121, 0 0 10px #EB4121; 
+}
+
+.navbar .nav-link:hover{
+    color: #000000; 
+    text-shadow: 2px 2px 8px #ffffff, -2px -2px 8px #ffffff, 0 0 10px #ffffff; 
 }
 
 #Circuitos .card {
@@ -64,7 +68,6 @@ h2, h3, h4 {
     background-color: var(--primary-color);
 }
 
-/* Media queries */
 
 @media (max-width: 767px) {
     body {
@@ -77,6 +80,7 @@ h2, h3, h4 {
         margin-right: 5% !important;
         margin-top: 5% !important;
         margin-bottom: 5% !important;
+        width: 95%;
     }
 }
 
@@ -91,9 +95,5 @@ h2, h3, h4 {
 }
 
 @media (min-width: 1024px) {
-    .navbar {
-        background-color: #FF9933;
-    }
+    
 }
-
-
